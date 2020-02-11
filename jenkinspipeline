@@ -1,0 +1,12 @@
+node{
+    stage('build'){
+        echo "build process going on";
+    }
+    stage('deploy'){
+        echo 'deploy process going on'
+    }
+    stage('test'){
+        echo 'testing process going on'
+        git 'https://github.com/tech-partha/MyRepo.git'
+    }
+}
